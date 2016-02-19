@@ -26,7 +26,7 @@ public class BookPanel extends JPanel
 		columnField = new JTextField(5);
 		currentBook = new JLabel("my book");
 		changeButton = new JButton("change the button");
-				displayButton = new JButton("showhe button");
+		displayButton = new JButton("show the button");
 				
 		setupTable();
 		setupPanel();

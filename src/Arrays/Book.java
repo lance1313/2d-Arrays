@@ -21,7 +21,7 @@ public class Book {
 	
 	public String toString()
 	{
-		String bookDescription = "The book has" + pages + " pages and the author is " + author +".";
+		String bookDescription = "The book has " + pages + " pages and the author is " + author +".";
 		
 		return bookDescription;
 	}

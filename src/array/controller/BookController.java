@@ -10,11 +10,12 @@ public class BookController
 	private BookFrame baseFrame;
 	private Book[][] myBooks;
 	
+	
 	public BookController()
 	{
 		myBooks = new Book [3][3];
 		setupArray();
-		baseFrame = new BookFrame();
+		baseFrame = new BookFrame(this);
 	}
 
 	public void start() 
