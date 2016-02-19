@@ -8,45 +8,47 @@ public class BookController
 {
 	
 	private BookFrame baseFrame;
-	private Book[][] myBook;
+	private Book[][] myBooks;
 	
 	public BookController()
 	{
-		myBook = new Book [3][3];
-		
+		myBooks = new Book [3][3];
+		setupArray();
 		baseFrame = new BookFrame();
 	}
 
 	public void start() 
 	{
-		BookPanel basePanel = new BookPanel(null);
-		setupArray();
+	//	BookPanel basePanel = new BookPanel(null);
+		
 		
 	}
 
-	private void setupArray() {
-		for(int row = 0; row < myBook.length; row++)
+	private void setupArray() 
+	{
+		for(int row = 0; row < myBooks.length; row++)
 		{
-			for(int col = 0;col < myBook[0].length; col++ )
+			for(int col = 0;col < myBooks[0].length; col++ )
 			{
-				myBook[row][col] = new Book();
+				myBooks[row][col] = new Book();
 				if(col % 2 == 0)
 				{
-					myBook[row][col].setPages(col + 5);
+					myBooks[row][col].setPages(col + 5);
 				}
 				
 				else
 				{
-					myBook[row][col].setAuthor("");
+					myBooks[row][col].setAuthor("");
 				}
 			}
 		}
 		
-		public Book[][] getBook()
-		{
-			return myBook;
-		}
-		
 	}
+
+	public Book[][] getMyBooks() {
+		return myBooks;
+	}
+
+	
 
 }
