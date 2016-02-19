@@ -19,7 +19,7 @@ public class BookController
 
 	public void start() 
 	{
-		BookPanel basePanel = new BookPanel();
+		BookPanel basePanel = new BookPanel(null);
 		setupArray();
 		
 	}

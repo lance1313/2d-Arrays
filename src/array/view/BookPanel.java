@@ -14,6 +14,7 @@ public class BookPanel extends JPanel
 	private JButton changeButton;
 	private JButton displayButton;
 	private JTable bookTable;
+	private BookController baseController;
 	
 	public BookPanel(BookController baseController)
 	{
